@@ -1,29 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lilita+One&display=swap');
+/* font-family: "Lilita One", sans-serif; */
+/* font-family: "Lexend Deca", sans-serif; */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body,html {
+
+body,
+html {
     height: 100%;
     width: 100%;
 }
+
 .page1 {
+
     height: 100%;
     width: 100%;
     background-color: #fcfcfc;
 }
+
 .page2 {
     height: 100%;
     width: 100%;
     background-color: aquamarine;
 }
+
 .page3 {
     height: 100%;
     width: 100%;
     background-color: blueviolet;
 }
+
 .footer {
     background-color: crimson;
     height: 60%;
     width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px);
+    opacity: 0.9;
+    justify-content: space-between;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.06);
+}
+
+.part1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 900;
+    h2 {
+        font-size: 2.rem;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #252424;
+        font-family: "Lexend Deca", sans-serif;
+        position: relative;
+        top:-3px;
+
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 200px;
+        margin-left: 90px;
+        justify-content: center;
+        background: url(./agro.png);
+        background-size: cover;
+        background-position: center;
+        scale: 1.2;
+    }
+
+    .img {
+        height: 100%;
+        width: 80px;
+        background: url(./logoimg.png);
+        background-size: cover;
+        background-position: center;
+        margin-left: 10px;
+    }
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    margin-right: 90px;
+
+    li {
+        list-style: none;
+        padding: 2px;
+
+        i {
+            font-size: 22px;
+            padding: 2px;
+        }
+    }
+
+    li:hover {
+        color: rgb(89, 182, 3);
+        border-bottom: 2px solid black;
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
