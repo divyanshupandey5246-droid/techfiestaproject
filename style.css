@@ -24,7 +24,8 @@ html {
 .page2 {
     height: 100%;
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
+    background: url();
 }
 
 .page3 {
@@ -34,33 +35,11 @@ html {
 }
 
 .footer {
-    height : 40%;
-    background-color: #111;
-    color: #fff;
-    padding: 20px;
+    background-color: rgb(24, 12, 14);
+    color: #fcfcfc;
     text-align: center;
-
-
-}
-
-.footer p {
-    margin-bottom: 10px;
-    font-size: 22px;
-    color:#bbb
-}
-
-.footer-links a {
-    color: #bbb;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 24px;   
-}
-.footer-links a {
-    margin: 0 30px;   /* left & right spacing */
-}
-
-.footer-links a:hover {
-    color: #fff;
+    height: 60%;
+    width: 100%;
 }
 
 .nav {
@@ -83,6 +62,7 @@ html {
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 900;
+
     h2 {
         font-size: 2.rem;
         font-weight: 700;
@@ -94,7 +74,7 @@ html {
         color: #252424;
         font-family: "Lexend Deca", sans-serif;
         position: relative;
-        top:-3px;
+        top: -3px;
 
     }
 
@@ -138,7 +118,7 @@ html {
     }
 
     li:hover {
-        color: rgb(89, 182, 3);
+        color: rgb(242, 160, 18);
         border-bottom: 2px solid black;
 
     }
@@ -160,3 +140,106 @@ html {
     top: 0;
     left: 10px;
 }
+
+.loding {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 33;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.ani {
+    top: 50%;
+    left: 50%;
+}
+
+.elements {
+
+    height: 90%;
+    margin: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: #fafafa;
+    justify-self: center;
+    border-radius: 15px;
+    /* box-shadow:0 5px 20px rgb(0, 0, 0, 0.16); */
+    border: 0.1px solid rgba(80, 80, 80, 0.255);
+}
+
+.card {
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .img {
+        background: url(https://www.mahindratractor.com/sites/default/files/2024-07/Jivo-225-4wd-Desktop_0_11zon.webp);
+        background-size: cover;
+        border-radius: 13px;
+        margin-top: 24px;
+        height: 200px;
+        width: 230px;
+        background-color: aqua;
+    }
+
+    .but {
+
+        background-color: rgb(243, 122, 8);
+        height: 34px;
+        width: 120px;
+        border-radius: 10px;
+        border: none;
+        color: #fafafa;
+        font-weight: 700;
+        margin-top: 20px;
+
+    }
+
+    .title {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .price {
+        font-size: 15px;
+        color: rgb(102, 103, 103);
+        font-weight: 300;
+        margin-top: 40px;
+    }
+}
+
+.text {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: "Lilita One", sans-serif;
+    ;
+    position: absolute;
+    top: 130px;
+    left: 90px;
+}
+
+.text span {
+    color: #f5af18;
+}
+ .tagline {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            opacity: 0.95;
+             margin-top: 200px;
+        }
