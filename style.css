@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+ /* font-family: "League Spartan", sans-serif; */
+/*  font-family: "Luckiest Guy", cursive; */
 /* font-family: "Lilita One", sans-serif; */
 /* font-family: "Lexend Deca", sans-serif; */
 
@@ -19,13 +23,16 @@ html {
     height: 100%;
     width: 100%;
     background-color: #fcfcfc;
+     background: url(./img.jpg);
+     background-size: cover;
+     background-position: center;
 }
 
 .page2 {
     height: 100%;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    background: url();
+   
 }
 
 .page3 {
@@ -223,23 +230,56 @@ html {
 }
 
 .text {
-    font-size: 48px;
-    font-weight: 700;
+    width: max-content;
+    height: 600px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Lilita One", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-51%);
+    white-space: nowrap;
+    font-size: 10em;
+     background-image: linear-gradient(to right, #56f55b, #a7f788, #b6f86d, #c9f84d, #e0f61d);
+    text-transform: uppercase;
+     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+  
+    color:white;
+   h5 {
+     font-weight: 500;
     letter-spacing: 2px;
     font-family: "Lilita One", sans-serif;
-    ;
-    position: absolute;
-    top: 130px;
-    left: 90px;
+   }
+   .f{
+    margin-left: 3px;
+   }
+}
+.a span {
+     display: inline-block;
+     font-weight: 500;
+}
+.b span {
+     display: inline-block;
+     font-weight: 500;
 }
 
-.text span {
-    color: #f5af18;
-}
  .tagline {
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 20px;
-            font-weight: 600;
+       font-family: "Lexend Deca", sans-serif;
+            font-size: 25px;
+          white-space: nowrap;
+            font-weight: 400;
             opacity: 0.95;
-             margin-top: 200px;
+             margin-top: 13px;
+             position: absolute;
+             color:rgb(249, 249, 248);
+          text-shadow: 1px 1px 2px rgb(8, 15, 6);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
         }
