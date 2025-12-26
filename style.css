@@ -228,12 +228,11 @@ html {
         margin-top: 40px;
     }
 }
-
 .text {
     width: max-content;
     height: 600px;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 16px;
   font-family: "League Spartan", sans-serif;
   font-family: "Lilita One", sans-serif;
     position: absolute;
@@ -245,12 +244,13 @@ html {
     transform: translate(-50%,-51%);
     white-space: nowrap;
     font-size: 10em;
-     background-image: linear-gradient(to right, #56f55b, #a7f788, #b6f86d, #c9f84d, #e0f61d);
-    text-transform: uppercase;
+     /* background-image: linear-gradient(to right, #56f55b, #a7f788, #b6f86d, #c9f84d, #e0f61d); */
+     color:#c9f84d;
+    /* 
      -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-  
-    color:white;
+    -webkit-text-fill-color: transparent; */
+      text-shadow: 1px 1px 1.2px rgb(8, 15, 6);
+  text-transform: uppercase;
    h5 {
      font-weight: 500;
     letter-spacing: 2px;
@@ -260,18 +260,10 @@ html {
     margin-left: 3px;
    }
 }
-.a span {
-     display: inline-block;
-     font-weight: 500;
-}
-.b span {
-     display: inline-block;
-     font-weight: 500;
-}
 
  .tagline {
        font-family: "Lexend Deca", sans-serif;
-            font-size: 25px;
+            font-size: 29px;
           white-space: nowrap;
             font-weight: 400;
             opacity: 0.95;
