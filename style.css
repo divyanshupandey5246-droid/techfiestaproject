@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+ /* font-family: "League Spartan", sans-serif; */
+/*  font-family: "Luckiest Guy", cursive; */
 /* font-family: "Lilita One", sans-serif; */
 /* font-family: "Lexend Deca", sans-serif; */
 
@@ -19,74 +23,22 @@ html {
     height: 100%;
     width: 100%;
     background-color: #fcfcfc;
-
+     background: url(./img.jpg);
+     background-size: cover;
+     background-position: center;
 }
 
 .page2 {
     height: 100%;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    background: url();
+   
 }
-.page3{
-      font-family: "Lexend Deca", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-.img {
-    border-radius: 13px;
-        margin-top: 24px;
-        height: 200px;
-        width: 230px;
-}
-.harvest-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+.page3 {
     height: 100%;
-}
-
-.harvest-card {
-    height: 400px;
-    width: 200px;
-    background: #fff;
-    border-radius: 15px;
-    padding: 15px;
-    font-family: "Lexend Deca", sans-serif;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    text-align: center;
-}
-
-  
-
-    .but {
-
-        background-color: rgb(252, 123, 2);
-        height: 34px;
-        width: 120px;
-        border-radius: 10px;
-        border: none;
-        color: #fafafa;
-        font-weight: 700;
-        margin-top: 20px;
-    }
-.harvest-img {
-    height: 200px;
     width: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.harvest-title {
-    margin-top: 25px;
-    font-size: 18px;
-}
-
-.harvest-price {
-    margin-top: 10px;
-    color: #666;
-}
+    background-color: blueviolet;
 }
 
 .footer {
@@ -148,7 +100,7 @@ html {
 
     .img {
         height: 100%;
-        width: 100%;
+        width: 80px;
         background: url(./logoimg.png);
         background-size: cover;
         background-position: center;
@@ -253,7 +205,7 @@ html {
 
     .but {
 
-        background-color: rgb(252, 123, 2);
+        background-color: rgb(243, 122, 8);
         height: 34px;
         width: 120px;
         border-radius: 10px;
@@ -276,25 +228,50 @@ html {
         margin-top: 40px;
     }
 }
-
 .text {
-    font-size: 48px;
-    font-weight: 700;
+    width: max-content;
+    height: 600px;
+    font-weight: 500;
+    letter-spacing: 16px;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Lilita One", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-51%);
+    white-space: nowrap;
+    font-size: 10em;
+     /* background-image: linear-gradient(to right, #56f55b, #a7f788, #b6f86d, #c9f84d, #e0f61d); */
+     color:#c9f84d;
+    /* 
+     -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; */
+      text-shadow: 1px 1px 1.2px rgb(8, 15, 6);
+  text-transform: uppercase;
+   h5 {
+     font-weight: 500;
     letter-spacing: 2px;
     font-family: "Lilita One", sans-serif;
-    ;
-    position: absolute;
-    top: 130px;
-    left: 90px;
+   }
+   .f{
+    margin-left: 3px;
+   }
 }
 
-.text span {
-    color: #f5af18;
-}
  .tagline {
-          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 20px;
-            font-weight: 600;
+       font-family: "Lexend Deca", sans-serif;
+            font-size: 29px;
+          white-space: nowrap;
+            font-weight: 400;
             opacity: 0.95;
-             margin-top: 200px;
+             margin-top: 13px;
+             position: absolute;
+             color:rgb(249, 249, 248);
+          text-shadow: 1px 1px 2px rgb(8, 15, 6);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
         }
