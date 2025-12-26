@@ -1,4 +1,5 @@
 
+
 // var h1text = document.querySelector(" .text h5").textContent;
 // var h1 = document.querySelector(".text h5");
 
@@ -37,6 +38,7 @@
 // },900);
 
 
+
   setTimeout( ()=>{
        gsap.from(" .text span",{
           scale:1.05,
@@ -56,5 +58,3 @@
  });
 
 },1200);
-
-
