@@ -117,7 +117,7 @@ html {
     }
 
     li:hover {
-        color: rgb(89, 182, 3);
+        color: rgb(242, 160, 18);
         border-bottom: 2px solid black;
 
     }
@@ -233,5 +233,12 @@ html {
 }
 
 .text span {
-    color: #facc15;
+    color: #f5af18;
 }
+ .tagline {
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            opacity: 0.95;
+             margin-top: 200px;
+        }
