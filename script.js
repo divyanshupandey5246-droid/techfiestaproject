@@ -1,9 +1,9 @@
 var loding = document.querySelector(".loding");
-document.body.style.overflow = "hidden";
-setTimeout(() => {
-    loding.style.display = "none";
-    document.body.style.overflow = "auto";
-}, 3000);
+// document.body.style.overflow = "hidden";
+// setTimeout(() => {
+//     loding.style.display = "none";
+//     document.body.style.overflow = "auto";
+// }, 3000);
 class equipments {
     url;
     title;
@@ -42,23 +42,16 @@ var tractor4=new equipments();
 tractor4.url=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHAoTBq99IqqPbwbKtTWRKGdtMVV6JixhJQ&s";
 tractor4.details = "A powerful and reliable companion for modern farming! The Sonalika DI 60 is equipped with a strong 44.7 kW (60 HP) engine that delivers high torque for superior performance in tough field conditions. Built for efficiency and durability, this tractor handles heavy-duty tasks like ploughing, cultivation, and hauling with ease. With its robust design and excellent fuel efficiency, the Sonalika DI 60 ensures maximum productivity and long-lasting performance for every agricultural need.";
 tractor4.title = "Sonalika DI 60 Tractor";
-
 tractor4.price = "₹5,000/day";
 tractor4.value = 5000;
 tractor4.power="60Hp";
-
-
-
 
 
 var img = document.querySelectorAll(".img");
 var tit = document.querySelectorAll(".title");
 var pri = document.querySelectorAll(".price");
 
-
-
-
-let list1 = [tractor1, tractor2, tractor3];
+let list1 = [tractor1, tractor2, tractor3,tractor4];
 
 let list2 = [tractor1, tractor2, tractor3,tractor4];
 
@@ -75,8 +68,9 @@ list1.forEach((element) => {
 });
 // harvest machine 1
 var harvest1 = new equipments();
-harvest1.url = "";
+harvest1.url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXG0KlcgKZcCPakkCrQBIkq7Koxt8RX6QPCA&s";
 harvest1.price = "₹25,000/day";
+harvest1.title="missing";
 harvest1.value = 25000;
 harvest1.power = "Diesel Engine";
 
@@ -98,21 +92,57 @@ harvest3.price = "₹22,000/day";
 harvest3.value = 22000;
 harvest3.power = "Diesel Engine";
 
+// var hImg = document.querySelectorAll(".harvest-img");
+// var hTitle = document.querySelectorAll(".harvest-title");
+// var hPrice = document.querySelectorAll(".harvest-price");
 
-var hImg = document.querySelectorAll(".harvest-img");
-var hTitle = document.querySelectorAll(".harvest-title");
-var hPrice = document.querySelectorAll(".harvest-price");
+let harvest = [harvest1, harvest2, harvest3];
+harvest.forEach((element) => {
+    img[i].style.background = `url(${element.url})`;
+    img[i].style.backgroundSize = `cover`;
 
-let harvestList = [harvest1, harvest2, harvest3];
+    tit[i].textContent = `${element.title}`;
+    pri[i].textContent = `${element.price}`;
 
-harvestList.forEach((item, i) => {
-    hImg[i].style.backgroundImage = `url(${item.url})`;
-    hTitle[i].textContent = item.title;
-    hPrice[i].textContent = item.price;
+    i++;
+
 });
 
+var drone1 = new equipments();
+drone1.url =" https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT-hOBsHtR6crb-0_ZJlff2ksMZ4l9UgqqWbdp1AjDFYOSyms_YnDJbpSWcXQdw2R2QVMcnLO-UFCPe9Hs8lJT4G1n09pIfhQ";
+drone1.title =" Hexacopter Spraying Drone "
+drone1.price ="₹25,000/day"
+drone1.value = 25000
+drone1.power =" "
+drone1.details ="Simplifly SF610M 10L 6-Axis Hexacopter Agriculture Spraying Drone PNP Set"
 
 
+var drone2 = new equipments();
+drone2.url ="https://www.xboom.in/wp-content/uploads/2025/04/f1a01bbc-4cd7-4741-a100-ee61f08b675c.jpg";
+drone2.title ="M65 Agriculture Drone "
+drone2.price ="₹20,000/day "
+drone2.value = 20000
+drone2.power =" "
+drone2.details ="M65 Agriculture Drone simplifies farm operations while maximizing productivity. It reduces maintenance time and costs, enhances reliability in challenging environments, and delivers precise navigation with a clear aerial view. From spraying and spreading to transport, the M65 handles it all with ease."
 
 
+var drone3 = new equipments();
+drone3.url ="https://www.xboom.in/wp-content/uploads/2021/09/Agriculture-Drone-Frame-10L.jpg.webp";
+drone3.title ="Agricultural Drone Camera"
+drone3.price =" ₹15,000/day"
+drone3.value = 15000
+drone3.power =" "
+drone3.details ="VFLYX 16L Agricultural Drone Camera V1 (Basic Model) "
 
+let drone = [drone1,drone2,drone3];
+
+drone.forEach((element) => {
+    img[i].style.background = `url(${element.url})`;
+    img[i].style.backgroundSize = `cover`;
+
+    tit[i].textContent = `${element.title}`;
+    pri[i].textContent = `${element.price}`;
+
+    i++;
+
+});
