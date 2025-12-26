@@ -13,7 +13,6 @@ class equipments {
     value;
 
 };
-
 var tractor1 = new equipments();
 tractor1.url = "https://www.mahindratractor.com/sites/default/files/2024-07/Jivo-225-4wd-Desktop_0_11zon.webp";
 tractor1.title = "Mahindra JIVO  Tractor";
@@ -42,6 +41,7 @@ tractor3.power = "26.5 TO 37.3 kW (36 TO 50 HP)";
 var img = document.querySelectorAll(".img");
 var tit = document.querySelectorAll(".title");
 var pri = document.querySelectorAll(".price");
+
 
 let list = [tractor1, tractor2, tractor3];
 var i = 0;
